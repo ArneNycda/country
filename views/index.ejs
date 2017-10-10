@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search your country</title>
+</head>
+<body>
+    <% if(show) { %>
+    <p>Country: <%= countryInfo.name %></p>
+    <p>Top Level Domain: <%= countryInfo.topLevelDomain %></p>
+    <% } else { %>
+    <p>The country "<%= searchTerm %>" doesn't exist. Sad!</p>
+    <% } %>
+</body>
+</html>
